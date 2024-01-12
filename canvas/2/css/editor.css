@@ -1,0 +1,786 @@
+.header{
+   display:flex;
+   flex-direction: row;
+   background-color: #f2f2f2;
+   width: 100%;
+   height: 80px;
+   border: 1px solid #e1e1e1;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.side1{
+   width: 90%;
+}
+   
+.side2{
+   align-items: center;
+    margin-left: 100px;
+	width: 5%;
+	
+}
+.side3{
+    width: 5%;
+    align-items: center;
+    margin-top: 13px;
+    margin-left: 160px;
+	
+}
+ 
+div.zoh0{
+   display:flex;
+   flex-direction: row;
+   margin-top: 10px;
+}
+
+div.zoh1 {
+  background-color: white;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  left: 330px;
+  height: 520px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0;
+}
+
+div.zoh2 {
+  width: 700px;
+  margin: 10px;
+  text-align: center;
+  left: 330px;
+  height: 520px;
+  
+}
+
+div.zoh3 {
+  background-color: #f2f2f2;
+  width: 340px;
+  margin: 10px;
+  text-align: center;
+  line-height: 25px;
+  left: 330px;
+  height: 520px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+div.shape{
+    line-height: 3.2;
+    background-color: #f2f2f2;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 200px;
+}
+.shape button {
+  width: 64px;
+  height: 54px;
+  opacity: .55;
+  clear: both;
+  border: 0;
+  border-radius: unset;
+  outline: none;
+}
+
+.shape button.active,
+.shape button:hover {
+  opacity: 1;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  box-shadow: inset 5px 0 10px 0 rgba(50, 50, 50, .1);
+}
+
+.shape button img,
+.shape button svg {
+  width: 30px;
+  height: 30px;
+}
+
+
+div.zohinpop{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+    border: 3px solid red;
+    color: white;
+    background-color: red;
+    padding: 11px 19px;
+    font-size: 15px;
+	margin-left: -10px;
+    margin-top: 14px;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+ 
+.butn {
+    border: 3px solid red;
+    color: white;
+    background-color: red;
+    padding: 11px 19px;
+    font-size: 15px;
+	margin-left: 20px;
+    margin-top: 14px;
+}
+
+.zoh-butn-wrapper input[type=file] {
+  font-size: 100px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 120px;
+  height: 45px;
+  margin-top: -46px;
+  margin-left: 20px;
+}
+ 
+.sidebar {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  overflow: scroll;
+  height: 300px;
+  width: 210px;
+  margin-left: 23px;
+  border: 1px solid #e1e1e1;
+  overflow-x: hidden;
+}
+
+.item1 {
+  grid-row: 1 / span 2;
+  margin-left: 10px;
+}
+ul{
+	list-style-type: none;
+	
+}
+
+li{
+	margin: 5px;
+	margin-left: -30px;
+}
+hr{
+	width: 200px;
+    color: #f2f2f2;
+    border: 2px solid #c5c3c3;
+ }
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 280px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* The popup form - hidden by default */
+div.form-popup {
+    display: none;
+    position: absolute;
+    left: 20px;
+    border: 3px solid #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    top: 177px;
+    width: 250px;
+    height: 520px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=number], .form-container input[type=number] {
+  width: 60%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=number]:focus, .form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  margin-left: 12px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#custom-button {
+  padding: 10px;
+  color: white;
+  background-color: #009578;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom-button:hover {
+  background-color: #00b28f;
+}
+
+#custom-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: #aaa;
+}
+div.upload-wrapper {
+  color: white;
+  font-weight: bold;
+  display: flex;
+}
+ 
+input[type="file"] {
+  position: absolute;
+}
+ 
+input[type="submit"] {
+  border: 3px solid #555;
+  color: white;
+  background: #666;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+ 
+input[type="submit"]:hover {
+  background: #555;
+}
+ 
+label[for="file-upload"] {
+  padding: 0.7rem;
+  display: inline-block;
+  background: #fa5200;
+  cursor: pointer;
+  border: 3px solid #ca3103;
+  border-radius: 0 5px 5px 0;
+  border-left: 0;
+}
+label[for="file-upload"]:hover {
+  background: #ca3103;
+}
+ 
+span.file-name {
+  padding: 0.7rem 3rem 0.7rem 0.7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #ffb543;
+  color: black;
+  border: 3px solid #f0980f;
+  border-radius: 5px 0 0 5px;
+  border-right: 0;
+}
+
+.toolbar {
+  line-height: 0;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 3px 0 rgba(50, 50, 50, .25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.toolbar button {
+  width: 64px;
+  height: 54px;
+  opacity: .55;
+  clear: both;
+  border: 0;
+  border-radius: unset;
+  outline: none;
+}
+
+.toolbar button.active,
+.toolbar button:hover {
+  opacity: 1;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  box-shadow: inset 5px 0 10px 0 rgba(50, 50, 50, .1);
+}
+
+.toolbar button img,
+.toolbar button svg {
+  width: 30px;
+  height: 30px;
+}
+.toolpanel {
+  background-color: #f9f9f9;
+  width: 300px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border: 1px solid #ddd;
+  transition: all .4s;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 13px;
+  color: #777;
+  display: none;
+  position: absolute;
+  z-index: 9999;
+}
+
+.toolpanel.closed {
+  left: -300px;
+}
+
+.toolpanel.visible {
+  display: initial;
+}
+div.shapepopup {
+	display: block;
+    background-color: #f2f2f2;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    left: 10px;
+    height: 520px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    top: 77px;
+	border: 1px solid #ddd;
+    transition: all .4s;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #777;
+    position: absolute;
+}
+.shapepopup .content {
+ /* padding: 20px;*/
+  position: relative;
+  height: -webkit-fill-available;
+  height: -ms-fill-available;
+  height: fill-available;
+  height: -moz-fill-available;
+}
+
+.shapepopup .title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.shapepopup .content .hide-show-handler {
+  position: absolute;
+  top: calc(50% - 40px);
+  right: -42px;
+  width: 40px;
+  height: 80px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+
+  background-image: url('/lib/caret-left.svg');
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.shapepopup .input-container {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+  
+}
+
+.shapepopup .input-container label {
+    width: 45%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.shapepopup .input-container select {
+  width: 50%;
+  height: 29px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.shapepopup .input-container .sp-replacer {
+  width: 50%;
+}
+
+.shapepopup .input-container .custom-number-input {
+  background: #ebebeb;
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  height: 30px;
+  background-color: #e4e4e4;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.shapepopup .input-container .custom-number-input button {
+  width: 36px !important;
+  height: 30px !important;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 6px;
+  color: #333;
+  border: 1px solid transparent;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.shapepopup .input-container .custom-number-input input {
+  height: 30px !important;
+  width: 60px !important;
+  background: transparent !important;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.shapepopup .input-container .custom-number-input input::-webkit-outer-spin-button,
+.shapepopup .input-container .custom-number-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+div.zohpopup{
+	display: none;
+    background-color: #f2f2f2;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    left: 10px;
+    height: 520px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    top: 77px;
+	border: 1px solid #ddd;
+    transition: all .4s;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #777;
+    position: absolute;
+}
+
+.zohpopup .content {
+  padding: 20px;
+  position: relative;
+  height: -webkit-fill-available;
+  height: -ms-fill-available;
+  height: fill-available;
+  height: -moz-fill-available;
+}
+
+.zohpopup .title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.zohpopup .content .hide-show-handler {
+  position: absolute;
+  top: calc(50% - 40px);
+  right: -42px;
+  width: 40px;
+  height: 80px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+
+  background-image: url('/lib/caret-left.svg');
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.zohpopup .input-container {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+}
+
+.zohpopup .input-container label {
+  width: 60%;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.zohpopup .input-container select {
+  width: 50%;
+  height: 29px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.zohpopup .input-container .sp-replacer {
+  width: 50%;
+}
+
+.zohpopup .input-container .custom-number-input {
+  background: #ebebeb;
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  height: 30px;
+  background-color: #e4e4e4;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.zohpopup .input-container .custom-number-input button {
+  width: 36px !important;
+  height: 30px !important;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 6px;
+  color: #333;
+  border: 1px solid transparent;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.zohpopup .input-container .custom-number-input input {
+  height: 30px !important;
+  width: 60px !important;
+  background: transparent !important;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.zohpopup .input-container .custom-number-input input::-webkit-outer-spin-button,
+.zohpopup .input-container .custom-number-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+div.canpropopup{
+	display: none;
+    background-color: #f2f2f2;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    left: 10px;
+    height: 520px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    top: 77px;
+	border: 1px solid #ddd;
+    transition: all .4s;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #777;
+    position: absolute;
+}
+
+.canpropopup .content {
+  padding: 20px;
+  position: relative;
+  height: -webkit-fill-available;
+  height: -ms-fill-available;
+  height: fill-available;
+  height: -moz-fill-available;
+}
+
+.canpropopup .title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.canpropopup .content .hide-show-handler {
+  position: absolute;
+  top: calc(50% - 40px);
+  right: -42px;
+  width: 40px;
+  height: 80px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+
+  background-image: url('/lib/caret-left.svg');
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.canpropopup .input-container {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+}
+
+.canpropopup .input-container label {
+  width: 60%;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.canpropopup .input-container select {
+  width: 50%;
+  height: 29px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.canpropopup .input-container .sp-replacer {
+  width: 50%;
+}
+
+.canpropopup .input-container .custom-number-input {
+  background: #ebebeb;
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  height: 30px;
+  background-color: #e4e4e4;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.canpropopup .input-container .custom-number-input button {
+  width: 36px !important;
+  height: 30px !important;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 6px;
+  color: #333;
+  border: 1px solid transparent;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.canpropopup .input-container .custom-number-input input {
+  height: 30px !important;
+  width: 60px !important;
+  background: transparent !important;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.canpropopup .input-container .custom-number-input input::-webkit-outer-spin-button,
+.canpropopup .input-container .custom-number-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px 0;
+  position: absolute;
+  z-index: 1;
+  top: 110%;
+  left: 50%;
+  margin-left: -60px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "fz-jazzy";
+  src: url("../fonts/fz-jazzy-13-shadow.ttf");
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #D8E0F1;
+}
+
+
+.mynavbar {
+    background-color: #FFF100;
+
+}
+
+.navbar {
+
+    font-weight: 900;
+    background-color: #2F3364;
+    color: white;
+}
+
+
+.nav-link,
+.navbar-brand {
+    color: white;
+}
+
+.banner-btn {
+    background-color: #FFF100;
+    color: white;
+    font-weight: 600;
+    padding: 12px 58px;
+    border-radius: 30px;
+    font-size: 21px;
+}
+
+
+.banner-text {
+
+    font-size: 24px;
+}
+.text-title-service{
+    font-size: 48;
+    font-weight: 700;
+}
+
+
+.banner-btn:hover {
+    background-color: white;
+    color: #6C63FF;
+}
+
+
+
+.banner {
+    background-color: #2F3364;
+    color: white;
+}
+
+.banner-heading {
+    font-size: 72px;
+    font-weight: 800;
+
+}
+
+.text-subtitle {
+    color: #6C63FF;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.text.title {
+    font-weight: 700;
+    font-size: 35px;
+
+}
+
+.service-image-background {
+    background-color: rgb(243, 249, 251);
+    border-radius: 50%;
+}
+
+.text-title-large {
+    font-size: 48px;
+}
+
+.service-image-background img {
+    margin-top: -100px;
+    margin-left: 46px;
+}
+
+.navbar-brand {
+    font-size: 45px;
+}
+
+.about-img {
+    margin-left: -250px;
+    overflow: hidden;
+    height: 650px;
+    width: auto;
+}
+
+.img-plotter {
+	height: 800px;
+	width: auto;
+}
+
+.img-medal {
+	height 600px;
+	width: auto;
+	margin-left: -100px;
+	margin-top: 30px;
+}
+
+
+
+.text-link {
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+.text-border{
+    border-bottom: 3px solid#6C63FF
+}
+
+
+
+.text-p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.service-icon{
+    background-color: #6C63FF;
+    color: white;
+    padding: 11px;
+    border-radius: 50%;
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    
+    padding-right: 10px;
+  }
+
+  .service-title{
+    font-weight: 700;
+    font-size: 21px;
+  }
+  .service-icon {
+    transition: 0.7s;
+  }
+  .service-card:hover span{
+    transform: translateX(50px);
+  }
+
+  .full-section{
+    background-color: #2F3364; ;
+  }
+
+
+
+  .product-card{
+border-bottom: 4px solid #2F3364;
+  }
+
+  .product-card-products{
+	border-bottom: 4px solid #FFF100;
+  }
+
