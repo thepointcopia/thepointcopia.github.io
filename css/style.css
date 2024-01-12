@@ -80,6 +80,7 @@ body {
 .service-image-background {
     background-color: rgb(243, 249, 251);
     border-radius: 50%;
+
 }
 
 .text-title-large {
@@ -96,15 +97,16 @@ body {
 }
 
 .about-img {
-    margin-left: -250px;
     overflow: hidden;
     height: 650px;
     width: auto;
+    max-width:100%
 }
 
 .img-plotter {
 	height: 800px;
 	width: auto;
+	max-width:100%
 }
 
 .img-medal {
@@ -112,6 +114,7 @@ body {
 	width: auto;
 	margin-left: -100px;
 	margin-top: 30px;
+	max-width:100%
 }
 
 
