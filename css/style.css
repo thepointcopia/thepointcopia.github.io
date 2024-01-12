@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "GOING MERRY";
-  src: url("../fonts/going_merry.ttf");
+  src: url("../fonts/GOINGMERRY.otf") format("opentype");
+  font-family: "GOINGMERRY";
 }
 
 body {
@@ -133,6 +133,7 @@ body {
 .text-p {
     font-size: 18px;
     font-weight: 400;
+    color: white;
 }
 
 .service-icon{
@@ -172,4 +173,5 @@ border-bottom: 4px solid #000000;
   .product-card-products{
 	border-bottom: 4px solid #FFF100;
   }
+
 
