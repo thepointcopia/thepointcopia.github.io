@@ -55,7 +55,7 @@ body {
 
 
 .banner {
-    background-color: #2F3364;
+    background-color: #000000;
     color: white;
 }
 
@@ -160,13 +160,13 @@ body {
   }
 
   .full-section{
-    background-color: #2F3364; ;
+    background-color: #000000; ;
   }
 
 
 
   .product-card{
-border-bottom: 4px solid #2F3364;
+border-bottom: 4px solid #000000;
   }
 
   .product-card-products{
